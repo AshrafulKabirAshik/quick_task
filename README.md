@@ -32,22 +32,25 @@ lib/
 ```
 
 
-## 🚀 Key Features
+### ● Technology Stack Used
 
-- ✅ **State Management**: GetX provides simple yet powerful reactive state management.
-- ✅ **Architecture Pattern**: Organized using the **MVC** pattern to separate concerns:
-  - **Model**: Handles data structure.
-  - **View**: UI components and widgets.
-  - **Controller**: Handles business logic, communicates with models, and updates views.
-- ✅ **Backend Integration**: Easily connects to REST APIs using `http` package or other API clients.
+- **Framework**: Flutter (Cross-platform for iOS & Android)
+- **State Management**: GetX (reactive state management, dependency injection, route management)
+- **Architecture**: MVC (Model-View-Controller)
+- **HTTP Client**: http (or Dio if customized)
+- **Environment Management**: flutter_dotenv
+- **Other Key Packages**:
+    - flutter_native_splash (Native splash screen)
+    - flutter_launcher_icons (App icon generation)
+    - change_app_package_name (Change Android/iOS package name)
+    - rename_app (Rename application name)
 
-## 🏐 Important Packages
+### ● How to Run the Project (iOS/Android)
 
-- ✅ **Native Splash** https://pub.dev/packages/flutter_native_splash
-  - dart run flutter_native_splash:create --path=flutter_native_splash.yaml
-- ✅ **App Icon** https://pub.dev/packages/flutter_launcher_icons
-  - dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
-- ✅ **Environment Variables** https://pub.dev/packages/flutter_dotenv
-- ✅ **Change App Package Name** https://pub.dev/packages/change_app_package_name
-- ✅ **Rename App** https://pub.dev/packages/rename_app
-
+- **Android** flutter run --debug   # or --release
+- **iOS (requires macOS and Xcode) flutter run --debug   # or --release**
+- **Run on specific device flutter devices                # List connected devices**
+- **flutter run -d <device-id>**
+- **Build APK/AAB**flutter build apk --release
+- **flutter build appbundle --release**
+- **Build iOS IPABashflutter build ios --release**
