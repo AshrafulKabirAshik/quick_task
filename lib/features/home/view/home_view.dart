@@ -27,7 +27,6 @@ class _HomeViewState extends State<HomeView> {
       controller.isLoading.value = true;
       controller.fetchNewsData();
       controller.loadTasksFromStorage();
-
     } catch (e) {
       debugPrint("Exception : $e");
     } finally {
@@ -71,10 +70,10 @@ class _HomeViewState extends State<HomeView> {
             controller.changePage(value);
           },
           items: [
-            BottomNavigationBarItem(icon: Icon(controller.currentTabIndex.value == 0 ? Icons.person : Icons.person_outline_rounded), label: 'Task'),
-            BottomNavigationBarItem(icon: Icon(controller.currentTabIndex.value == 1 ? Icons.person : Icons.person_outline_rounded), label: 'News'),
+            BottomNavigationBarItem(icon: Icon(controller.currentTabIndex.value == 0 ? Icons.task : Icons.task_outlined), label: 'Task'),
+            BottomNavigationBarItem(icon: Icon(controller.currentTabIndex.value == 1 ? Icons.newspaper : Icons.newspaper), label: 'News'),
             BottomNavigationBarItem(
-              icon: Icon(controller.currentTabIndex.value == 2 ? Icons.person : Icons.person_outline_rounded),
+              icon: Icon(controller.currentTabIndex.value == 2 ? Icons.account_circle : Icons.account_circle_outlined),
               label: 'Profile',
             ),
           ],

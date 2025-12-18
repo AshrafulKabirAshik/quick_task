@@ -5,6 +5,6 @@ class TabProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('TabProfileView');
+    return Center(child: const Text(textAlign: TextAlign.center, 'I\'m working with a tight 3-hour timeframe for this project.\n😢'));
   }
 }
